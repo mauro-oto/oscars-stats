@@ -27,6 +27,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'wolfram-alpha'
 
+gem 'rails_12factor'
+
 gem 'themoviedb', '~> 0.1.0'
 
 # Use ActiveModel has_secure_password
