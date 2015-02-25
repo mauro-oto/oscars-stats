@@ -1,0 +1,9 @@
+<p id="notice"><%= notice %></p>
+
+<% @oscar_stats.each do |stat| %>
+  <%= "#{stat['name']}: #{stat['conversion_rate']}% - Wins: #{stat['wins']} - Nominations: #{stat['nominations']}" %>
+  <p></p>
+<% end %>
+
+<%= link_to 'Edit', edit_stat_path(@stat) %> |
+<%= link_to 'Back', stats_path %>
