@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   resources :stats
 
+  root 'stats#new'
+
   get '/query' => 'stats#query'
 
   # The priority is based upon order of creation: first created -> highest priority.
